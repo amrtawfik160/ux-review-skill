@@ -131,6 +131,9 @@ Bad: the Next button touches the screen edge. Good: it clears the safe area with
 **M5. Each gesture has one owner.** Scroll inside pagers and sheets, and try the system back gesture.
 Bad: scrolling a document sometimes jumps to the previous page. Good: paging starts only from a deliberate horizontal swipe.
 
+**M6. A sheet follows the finger down and closes.** On every sheet or dialog that slides up from the bottom, scroll its content to the top, then drag down. The sheet itself must move with the finger, close past a distance or a quick flick, and spring back otherwise. While the content is not at the top, the same drag scrolls the content. Why: people learned this from the system sheets on their phones. A pull that only stretches the content feels stuck, and it forces a reach for a small close button at the top of a tall screen.
+Bad: pulling down at the top opens a blank gap above the search field and the sheet stays put. Good: the whole sheet tracks the finger and dismisses, and scrolling still works mid-list.
+
 ## Visual accuracy and motion
 
 **V1. Contents sit centered within 1px.** Measure it in the browser.
