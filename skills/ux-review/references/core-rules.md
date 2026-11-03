@@ -77,6 +77,12 @@ Bad: "Connect your calendar" as a first choice leads to "Not available yet". Goo
 **R7. Dismissed suggestions stay dismissed.** Close each promo and tip, then reload.
 Bad: an upgrade card returns on every visit. Good: it stays closed for that user.
 
+**R8. Every failure leads somewhere.** Force each failure in the flow: network drop, server error, timeout, no permission, quota or credits out, provider down, invalid input, partial success. Each one shows what failed, what still worked, and one action that recovers: retry that step, a link to the exact fix, or who to ask. A failed load is an error with Try again, never an empty state. Why: a user who hits a silent or vague failure decides the product is broken and leaves.
+Bad: a failed list shows "No knowledge yet. Add knowledge". Good: "Couldn't load knowledge. Try again", and the empty state appears only when the list is truly empty.
+
+**R9. Failures while the user is away reach them.** For work that runs without the user (scheduled jobs, automations, syncs, connected accounts), check what happens when it fails, a token expires, or a balance runs out. The user is told once, in the app and by email or message, with the cause and a link that opens the fix. Repeats are grouped, not resent. Why: a background failure nobody hears about is found days later as missing work.
+Bad: a nightly report fails and the next login shows nothing. Good: "Your Monday report failed: Gmail access expired. Reconnect Gmail" arrives the same hour and links to the reconnect screen.
+
 ## Consistency
 
 **C1. One thing has one name.** List each screen's nouns and merge the synonyms.
